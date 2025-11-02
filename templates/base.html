@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		 <link rel="icon" href="{{ url_for('static', filename='images/iconheader.png') }}" type="image/png">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <title>Student Management v1.0</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/w3.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        <div class="w3-bar w3-container" style="position:sticky;top:0;background-color:#33A1E0;color:white;padding:12px 20px;z-index:1000;">
+            <h4 style="margin:0;text-align:left;"><b>Student Management v1.0</b></h4>
+        </div>
+
+        <div class="w3-container w3-padding">
+            {% block content %}
+            {% endblock %}
+        </div>
+
+        <p style="text-align:center;">
+            &copy;<b> JOHN CARLO D SERMONIA, 2025 </b>
+        </p>
+
+        <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    </body>
+</html>
